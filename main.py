@@ -13,7 +13,7 @@ def mostrar_menu():
 	print("1. Coche")
 	print("2. Bicicleta")
 	print("3. Camioneta")
-	print("4. El flipao de la moto del Valle del Kas")
+	print("4. Motocicleta")
 	print("5. Salir")
 
 def obtener_datos_vehiculo(tipo):
