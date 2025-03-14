@@ -10,7 +10,7 @@ from lanzador import  lanzador_main
 
 def mostrar_menu():
 	print("Seleccione el tipo de vehículo:")
-	print("1. Coche")
+	print("1. Coche que son 4 latas")
 	print("2. Bicicleta")
 	print("3. Camioneta")
 	print("4. Motocicleta")
