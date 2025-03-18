@@ -58,7 +58,8 @@ def obtener_datos_vehiculo(tipo):
 		return Motocicleta(color, ruedas, marca, modelo, tipo, velocidad, cilindrada)
 	
 	elif tipo == 5:
-		
+
+
 		def catalogar(vehiculos, ruedas=None):
 			if ruedas is not None:
 				vehiculos_filtrados = [vehiculo for vehiculo in vehiculos if vehiculo.ruedas == ruedas]
@@ -69,9 +70,6 @@ def obtener_datos_vehiculo(tipo):
 				for vehiculo in vehiculos:
 					print(vehiculo)
 
-		catalogar(vehiculos, 0)
-		catalogar(vehiculos, 2)
-		catalogar(vehiculos, 4)
 	else:
 		return None
 
