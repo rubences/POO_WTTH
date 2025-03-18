@@ -1,12 +1,17 @@
 from subclases.bicicleta import Bicicleta
 
 class Motocicleta(Bicicleta):
-    def __init__(self, marca, color, modelo, num_ruedas, cilindrada, tipo):
-        super().__init__(marca, modelo, color, tipo, ruedas=num_ruedas)
+    def __init__(self,color, ruedas, marca, modelo, tipo, velocidad, cilindrada):  
+        super().__init__(color, ruedas, marca, modelo, tipo)
         self.cilindrada = cilindrada
-        self.tipo = tipo
-        self.num_ruedas = num_ruedas
+        self.velocidad = velocidad
 
+    def __str__(self):
+        return f"Motocicleta(color={self.color}, ruedas={self.ruedas}, marca={self.marca}, modelo={self.modelo}, tipo={self.tipo}, velocidad={self.velocidad}, cilindrada={self.cilindrada})"
+
+    def catalogar(vehiculos):
+        for vehiculo in vehiculos:
+            print(f"{vehiculo.__class__.__name__}: {vehiculo}")
 
     def arrancar(self):
         print("Arrancando la motocicleta")
@@ -14,7 +19,6 @@ class Motocicleta(Bicicleta):
     def pedalear(self):
         print("Las motocicletas no se pedalean")
 
-    def __str__(self):
-        return f"Motocicleta(marca={self.marca}, modelo={self.modelo}, color={self.color}, tipo={self.tipo}, cilindrada={self.cilindrada}, num_ruedas={self.num_ruedas})"
+    
     
 
