@@ -58,17 +58,10 @@ def obtener_datos_vehiculo(tipo):
 		return Motocicleta(color, ruedas, marca, modelo, tipo, velocidad, cilindrada)
 	
 	elif tipo == 5:
-
-
-		def catalogar(vehiculos, ruedas=None):
-			if ruedas is not None:
-				vehiculos_filtrados = [vehiculo for vehiculo in vehiculos if vehiculo.ruedas == ruedas]
-				print(f"Se han encontrado {len(vehiculos_filtrados)} vehículos con {ruedas} ruedas:")
-				for vehiculo in vehiculos_filtrados:
-					print(vehiculo)
-			else:
-				for vehiculo in vehiculos:
-					print(vehiculo)
+		# Ordenar por tipo de ruedas
+		ruedas = int(input("Ingrese el número de ruedas para filtrar: "))
+		catalogar(vehiculos=[], ruedas=ruedas)
+		return None
 
 	else:
 		return None

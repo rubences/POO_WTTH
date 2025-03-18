@@ -23,6 +23,24 @@ def catalogar(vehiculos):
             print(f"{atributo}: {valor}")
         print()
 
+def catalogar(vehiculos, ruedas=None):
+    if ruedas is not None:
+        vehiculos_filtrados = [v for v in vehiculos if v.ruedas == ruedas]
+        print(f"Se han encontrado {len(vehiculos_filtrados)} vehículos con {ruedas} ruedas:")
+        for vehiculo in vehiculos_filtrados:
+            print(f"Clase: {vehiculo.__class__.__name__}")
+            for atributo, valor in vehiculo.__dict__.items():
+                print(f"{atributo}: {valor}")
+            print()
+    else:
+        for vehiculo in vehiculos:
+            print(f"Clase: {vehiculo.__class__.__name__}")
+            for atributo, valor in vehiculo.__dict__.items():
+                print(f"{atributo}: {valor}")
+            print()
+
+
+
 
 
 
