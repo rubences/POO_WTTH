@@ -24,7 +24,7 @@ def obtener_datos_vehiculo(tipo):
 		ruedas = input("Ingrese el numero de ruedas del coche: ")
 		velocidad = input("Ingrese la velocidad del coche: ")
 		cilindrada = input("Ingrese la cilindrada del coche: ")
-		
+		vehiculo.append(Coche(color, ruedas, velocidad, cilindrada))
 		return Coche(color, ruedas, velocidad, cilindrada)
 	elif tipo == 2:
 		# Obtener datos específicos para Bicicleta
