@@ -14,6 +14,7 @@ def lanzador_main():
     vehiculos.append(Camioneta("negro", 4, 100, 2200, "ford", "ranger", 1000))
     vehiculos.append(Motocicleta("blanca",2,"Suzuki","GSXR", "Deportiva", 300, 999))
     
+    
     catalogar(vehiculos)
     
 def catalogar(vehiculos):
