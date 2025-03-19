@@ -2,7 +2,7 @@ from subclases.coche import Coche
 from subclases.bicicleta import Bicicleta
 from subsubclases.camioneta import Camioneta
 from subsubclases.motocicleta import Motocicleta
-from superclases.vehiculo import Vehiculo
+
 
 def lanzador_main():
     vehiculos = []
