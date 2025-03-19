@@ -6,6 +6,9 @@ class Motocicleta(Bicicleta):
         self.cilindrada = cilindrada
         self.velocidad = velocidad
 
+    def __name__(self):
+        return self.__class__.__name__
+
     def __str__(self):
         return f"Motocicleta(color={self.color}, ruedas={self.ruedas}, marca={self.marca}, modelo={self.modelo}, tipo={self.tipo}, velocidad={self.velocidad}, cilindrada={self.cilindrada})"
 
